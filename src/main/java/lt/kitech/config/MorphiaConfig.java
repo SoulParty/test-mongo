@@ -7,13 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 
 /**
  * Created by Danielius Kibartas on 2015-09-11.
  */
 @Configuration
-@PropertySource(value = "classpath:application.properties")
+@PropertySource("classpath:/application.properties")
 public class MorphiaConfig {
 
     @Value("${mongodb.name}")

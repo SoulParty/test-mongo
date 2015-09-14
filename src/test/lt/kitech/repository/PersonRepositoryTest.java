@@ -19,9 +19,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mongodb.morphia.Datastore;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static org.junit.Assert.assertTrue;

@@ -5,6 +5,7 @@ import com.mongodb.WriteConcern;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -13,7 +14,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
  * Created by Danielius Kibartas on 2015-09-11.
  */
 @Configuration
-@PropertySource(value = "classpath:application.properties")
+@PropertySource("classpath:/application.properties")
 public class MongoConfig extends AbstractMongoConfiguration {
 
     @Value("${mongodb.name}")
